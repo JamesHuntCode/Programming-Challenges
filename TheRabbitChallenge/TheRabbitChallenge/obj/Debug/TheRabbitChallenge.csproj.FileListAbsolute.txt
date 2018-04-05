@@ -1,0 +1,7 @@
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\bin\Debug\TheRabbitChallenge.exe.config
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\bin\Debug\TheRabbitChallenge.exe
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\bin\Debug\TheRabbitChallenge.pdb
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\obj\Debug\TheRabbitChallenge.csprojResolveAssemblyReference.cache
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\obj\Debug\TheRabbitChallenge.csproj.CoreCompileInputs.cache
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\obj\Debug\TheRabbitChallenge.exe
+C:\git\Programming-Challenges\TheRabbitChallenge\TheRabbitChallenge\obj\Debug\TheRabbitChallenge.pdb
