@@ -10,7 +10,7 @@ namespace RepeatingStrings
     {
         static void Main(string[] args)
         {
-            string[] input = { "12", "11", "9", "1", "12", "2", "8", "9", "7", "2", "13" };
+            string[] input = { "12", "11", "9", "1", "12" };
 
             string repeatingString = DetectRepeatingString(input);
 
@@ -32,29 +32,22 @@ namespace RepeatingStrings
             string repeatingString = "";
             string index = "";
 
-            List<string> checkedStrings = new List<string>();
+            string[] copy = collection;
 
             for (int i = 0; i < collection.Length; i++)
             {
-                if (checkedStrings.Count() > 0)
+                for (int j = 0; j < copy.Length; j++)
                 {
-                    for (int j = 0; j < checkedStrings.Count; j++)
+                    if ((collection[i] == copy[j]) && (i != j))
                     {
-                        if (collection[i] == checkedStrings[j])
-                        {
-                            repeatingString = collection[i];
-                            index = i.ToString();
-                        }
+                        repeatingString = collection[i];
+                        index = j.ToString();
+                        return repeatingString + ";" + index;
                     }
-                }
-                else
-                {
-                    checkedStrings.Add(collection[i]);
                 }
             }
 
-            if (repeatingString.Length > 0) { return repeatingString + ";" + index; }
-            else { return string.Empty; }
+            return string.Empty; 
         }
     }
 }
