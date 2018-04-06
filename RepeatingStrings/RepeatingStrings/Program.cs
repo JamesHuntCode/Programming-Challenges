@@ -36,9 +36,20 @@ namespace RepeatingStrings
 
             for (int i = 0; i < collection.Length; i++)
             {
-                if (true)
+                if (checkedStrings.Count() > 0)
                 {
-
+                    for (int j = 0; j < checkedStrings.Count; j++)
+                    {
+                        if (collection[i] == checkedStrings[j])
+                        {
+                            repeatingString = collection[i];
+                            index = i.ToString();
+                        }
+                    }
+                }
+                else
+                {
+                    checkedStrings.Add(collection[i]);
                 }
             }
 
