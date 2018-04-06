@@ -1,0 +1,7 @@
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\bin\Debug\RepeatingStrings.exe.config
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\bin\Debug\RepeatingStrings.exe
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\bin\Debug\RepeatingStrings.pdb
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\obj\Debug\RepeatingStrings.csprojResolveAssemblyReference.cache
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\obj\Debug\RepeatingStrings.csproj.CoreCompileInputs.cache
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\obj\Debug\RepeatingStrings.exe
+C:\git\Programming-Challenges\RepeatingStrings\RepeatingStrings\obj\Debug\RepeatingStrings.pdb

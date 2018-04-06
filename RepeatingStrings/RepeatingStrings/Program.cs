@@ -12,21 +12,38 @@ namespace RepeatingStrings
         {
             string[] input = { "12", "11", "9", "1", "12", "2", "8", "9", "7", "2", "13" };
 
-            bool repeatDetected = DetectRepeatingString(input);
+            string repeatingString = DetectRepeatingString(input);
 
-            if (repeatDetected)
+            if (repeatingString.Length > 0)
             {
-                Console.WriteLine("First repeating string is: ");
+                string[] data = repeatingString.Split(';');
+                Console.WriteLine("First repeating string is: '" + data[0] + "' located at index: " + data[1]);
+                Console.Read();
             }
             else
             {
                 Console.WriteLine("No repeating strings have been located within the input collection.");
+                Console.Read();
             }
         }
 
-        static bool DetectRepeatingString(string[] collection)
+        static string DetectRepeatingString(string[] collection)
         {
-            return false;
+            string repeatingString = "";
+            string index = "";
+
+            List<string> checkedStrings = new List<string>();
+
+            for (int i = 0; i < collection.Length; i++)
+            {
+                if (true)
+                {
+
+                }
+            }
+
+            if (repeatingString.Length > 0) { return repeatingString + ";" + index; }
+            else { return string.Empty; }
         }
     }
 }
