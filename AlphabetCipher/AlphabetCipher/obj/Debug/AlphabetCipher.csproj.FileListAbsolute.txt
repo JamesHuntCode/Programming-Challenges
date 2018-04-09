@@ -1,0 +1,7 @@
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\bin\Debug\AlphabetCipher.exe.config
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\bin\Debug\AlphabetCipher.exe
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\bin\Debug\AlphabetCipher.pdb
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\obj\Debug\AlphabetCipher.csprojResolveAssemblyReference.cache
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\obj\Debug\AlphabetCipher.csproj.CoreCompileInputs.cache
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\obj\Debug\AlphabetCipher.exe
+C:\git\Programming-Challenges\AlphabetCipher\AlphabetCipher\obj\Debug\AlphabetCipher.pdb
