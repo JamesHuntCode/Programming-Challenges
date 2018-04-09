@@ -13,7 +13,7 @@ namespace AlphabetCipher
         {
             string demoInput = "snitch thepackagehasbeendelivered";
 
-            Console.WriteLine("Keyword & Message to be enctryped: " + demoInput);
+            Console.WriteLine("Keyword & Message to be encryped: " + demoInput);
 
             string encodedMessage = Encode(demoInput);
             Console.WriteLine("\nEncryted Message: " + encodedMessage);
@@ -24,7 +24,6 @@ namespace AlphabetCipher
             Console.ReadKey();
         }
 
-        // Method to encode message
         static string Encode(string input)
         {
             string[] data = input.Split();
@@ -53,40 +52,26 @@ namespace AlphabetCipher
             string repeatedKeyword = new String(repeated.ToArray());
 
             string alphabet = "abcdefghijklmnopqrstuvwxyz";
-            string[] temp = { };
-            List<string> adjustedAlphabet = new List<string>();
+            List<string> newAlphabet = new List<string>();
 
-            int accessIndex = 0;
-            string shifted = "";
-            char sub = ' ';
-
-            for (int i = 0; i < repeatedKeyword.Length; i++)
+            for (int i = 0; i < message.Length; i++)
             {
-                // create shifted index alphabets
-                adjustedAlphabet.Clear();
-                temp = alphabet.Split(repeatedKeyword[i]);
-                for (int j = 0; j < temp.Length; j++)
+                int sortedAlphabetIndex = alphabet.IndexOf(repeatedKeyword[i]);
+
+                string[] arr = alphabet.Split(message[i]);
+                newAlphabet.Clear();
+                for (int j = arr.Length - 1; j >= 0; j--)
                 {
-                    adjustedAlphabet.Add(temp[j]);
+                    newAlphabet.Add(arr[j]);
                 }
-                adjustedAlphabet.Insert(adjustedAlphabet.Count(), repeatedKeyword[i].ToString());
+                newAlphabet.Insert(0, message[i].ToString());
 
-                // locate index of letter in real alphabet
-                accessIndex = alphabet.IndexOf(repeatedKeyword[i].ToString());
-
-                // locate index in shifted alphabet
-                shifted = string.Join("", adjustedAlphabet.ToArray().Reverse());
-                sub = shifted[accessIndex];
-
-                // push located value into encrypted message
-                
+                string str = string.Join(string.Empty, newAlphabet);
+                encodedMessage.Add(str[sortedAlphabetIndex]);
             }
-
-            //return new String(encodedMessage.ToArray());
-            return alphabet + " ----- " + shifted;
+            return String.Join(string.Empty, encodedMessage);
         }
 
-        // Method to decode message
         static string Decode(string input)
         {
             return "";
