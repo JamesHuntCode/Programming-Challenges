@@ -56,8 +56,13 @@ namespace AlphabetCipher
             string[] temp = { };
             List<string> adjustedAlphabet = new List<string>();
 
+            int accessIndex = 0;
+            string shifted = "";
+            char sub = ' ';
+
             for (int i = 0; i < repeatedKeyword.Length; i++)
             {
+                // create shifted index alphabets
                 adjustedAlphabet.Clear();
                 temp = alphabet.Split(repeatedKeyword[i]);
                 for (int j = 0; j < temp.Length; j++)
@@ -65,16 +70,27 @@ namespace AlphabetCipher
                     adjustedAlphabet.Add(temp[j]);
                 }
                 adjustedAlphabet.Insert(adjustedAlphabet.Count(), repeatedKeyword[i].ToString());
+
+                // locate index of letter in real alphabet
+                accessIndex = alphabet.IndexOf(repeatedKeyword[i].ToString());
+
+                // locate index in shifted alphabet
+                shifted = string.Join("", adjustedAlphabet.ToArray().Reverse());
+                sub = shifted[accessIndex];
+
+                // push located value into encrypted message
+                
             }
 
-            //return new string(encodedMessage.ToArray());
-            return String.Join(string.Empty, adjustedAlphabet.ToArray().Reverse());
+            //return new String(encodedMessage.ToArray());
+            return alphabet + " ----- " + shifted;
         }
 
         // Method to decode message
         static string Decode(string input)
         {
             return "";
+            // this method part of the bonus challenge
         }
     }
 }
